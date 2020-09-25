@@ -108,8 +108,7 @@ package{
 			
 				var stem:Sprite=new Sprite();
 				stem.graphics.lineStyle(6,0xfa7370);
-				//stem.graphics.lineGradientStyle(GradientType.RADIAL,[0x06413f,0x9eda23,0x333333],[1,1,1],[0,32,255]);	
-				stem.graphics.lineGradientStyle(GradientType.RADIAL,[0xfa706e,0xfec29d,0x333333],[1,1,1],[0,32,255]);	
+				stem.graphics.lineGradientStyle(GradientType.RADIAL,[0xfa706e,0xfec29d,0x0d1733],[1,1,1],[0,32,255]);	
 				stem.graphics.drawPath(commands0,data0);
 				addChild(stem);
 				
@@ -117,9 +116,7 @@ package{
 					var leaf:Sprite=new Sprite();
 					var gradientLeafMatrix:Matrix = new Matrix(); 
 					gradientLeafMatrix.createGradientBox(size/2, size/3, 0, 0, 0); 
-					//leaf.graphics.lineStyle(1,0x06413f);
-					leaf.graphics.lineStyle(2,0xfa706e);
-					//leaf.graphics.beginGradientFill(GradientType.LINEAR,[0x06413f,0x9eda23],[1,0.9],[0,255],gradientLeafMatrix);
+					leaf.graphics.lineStyle(1,0xa869b8);
 					leaf.graphics.beginGradientFill(GradientType.LINEAR,[0xfa706e,0xfec29d],[1,0.9],[0,255],gradientLeafMatrix);
 					leaf.graphics.drawPath(commands1,data1);
 					leaf.graphics.endFill();
